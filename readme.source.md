@@ -199,7 +199,7 @@
 
 <br/>
 
-```aura width=900 height=280
+```aura width=900 height=340
 <div style={{
   display: 'flex',
   gap: '20px',
@@ -235,7 +235,7 @@
       </div>
 
       <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '13px' }}>
-        <span style={{ color: '#cbd5e1' }}>Clarification Precision (75% → 94%)</span>
+        <span style={{ color: '#cbd5e1' }}>Clarification Precision (75% to 94%)</span>
         <span style={{ color: '#38bdf8', fontWeight: 700 }}>94%</span>
       </div>
       <div style={{ width: '100%', height: '8px', background: '#1e293b', borderRadius: '4px', display: 'flex' }}>
@@ -243,7 +243,7 @@
       </div>
 
       <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '13px' }}>
-        <span style={{ color: '#cbd5e1' }}>Clarification Recall (32% → 90%)</span>
+        <span style={{ color: '#cbd5e1' }}>Clarification Recall (32% to 90%)</span>
         <span style={{ color: '#a855f7', fontWeight: 700 }}>90%</span>
       </div>
       <div style={{ width: '100%', height: '8px', background: '#1e293b', borderRadius: '4px', display: 'flex' }}>
@@ -269,10 +269,10 @@
       ARCHITECTURAL PILLARS & RESEARCH
     </div>
     <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '13px', color: '#e2e8f0' }}>
-      <div>⚡ <b>WebGPU & Shaders:</b> 48k particle wordmark, 80k depth-lit morph, raymarched black hole.</div>
-      <div>🛡️ <b>Database-First Security:</b> 9-role Postgres 17 RLS + pgTAP testing & 6-phase state machines.</div>
-      <div>🌍 <b>Geospatial & Mobile Perf:</b> PostGIS 3 sub-second search · LCP 4.75s → 1.74s (-63%).</div>
-      <div>🎓 <b>Agentic AI Security Thesis:</b> MCP, MITRE ATLAS, OWASP Agentic Top 10 & Zero-Trust.</div>
+      <div style={{ display: 'flex', gap: '10px' }}><div style={{ width: '8px', height: '8px', marginTop: '5px', borderRadius: '2px', background: '#38bdf8', flexShrink: 0 }} /><span style={{ display: 'flex', flexDirection: 'column' }}><span style={{ fontWeight: 700 }}>WebGPU & Shaders:</span><span style={{ color: '#94a3b8' }}>48k particle wordmark, 80k depth-lit morph, raymarched black hole.</span></span></div>
+      <div style={{ display: 'flex', gap: '10px' }}><div style={{ width: '8px', height: '8px', marginTop: '5px', borderRadius: '2px', background: '#10b981', flexShrink: 0 }} /><span style={{ display: 'flex', flexDirection: 'column' }}><span style={{ fontWeight: 700 }}>Database-First Security:</span><span style={{ color: '#94a3b8' }}>9-role Postgres 17 RLS + pgTAP testing & 6-phase state machines.</span></span></div>
+      <div style={{ display: 'flex', gap: '10px' }}><div style={{ width: '8px', height: '8px', marginTop: '5px', borderRadius: '2px', background: '#a855f7', flexShrink: 0 }} /><span style={{ display: 'flex', flexDirection: 'column' }}><span style={{ fontWeight: 700 }}>Geospatial & Mobile Perf:</span><span style={{ color: '#94a3b8' }}>PostGIS 3 sub-second search · LCP 4.75s to 1.74s (-63%).</span></span></div>
+      <div style={{ display: 'flex', gap: '10px' }}><div style={{ width: '8px', height: '8px', marginTop: '5px', borderRadius: '2px', background: '#fb7185', flexShrink: 0 }} /><span style={{ display: 'flex', flexDirection: 'column' }}><span style={{ fontWeight: 700 }}>Agentic AI Security Thesis:</span><span style={{ color: '#94a3b8' }}>MCP, MITRE ATLAS, OWASP Agentic Top 10 & Zero-Trust.</span></span></div>
     </div>
     <div style={{ fontSize: '11px', color: '#64748b' }}>
       B.Sc. Computer Science @ UniCam (2026) · M.Sc. Artificial Intelligence Systems @ UniTrento
