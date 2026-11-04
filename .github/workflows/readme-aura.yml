@@ -1,0 +1,50 @@
+name: Generate Aura README & Contribution Snake
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - 'readme.source.md'
+      - '.github/workflows/readme-aura.yml'
+  schedule:
+    # Si aggiorna automaticamente ogni giorno alle 06:00 UTC
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  # 1. Genera la griglia animata "Snake" dei commit in Light & Dark mode
+  generate-snake:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate github-contribution-grid-snake.svg
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Push snake SVGs to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # 2. Compila i blocchi React/JSX ```aura in SVG (Solo se usi readme.source.md)
+  generate-readme-aura:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Render JSX Aura Components to SVG
+        uses: collectioneur/readme-aura@main
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 310" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050816" />
+      <stop offset="50%" stop-color="#0B1120" />
+      <stop offset="100%" stop-color="#1E1B4B" />
+    </linearGradient>
+
+    <linearGradient id="cyanViolet" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="50%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+
+    <linearGradient id="emeraldCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+
+    <radialGradient id="orbGlow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="orbGlow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0" />
+    </radialGradient>
+
+    <pattern id="cyberGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1E293B" stroke-width="0.9" />
+    </pattern>
+
+    <style>
+      .title { font: 800 28px 'Segoe UI', Inter, system-ui, sans-serif; fill: #F8FAFC; letter-spacing: 0.5px; }
+      .subtitle { font: 600 13px 'JetBrains Mono', monospace; fill: #38BDF8; letter-spacing: 1.5px; }
+      .mono { font: 500 12.5px 'JetBrains Mono', monospace; fill: #CBD5E1; }
+      .mono-dim { font: 500 11.5px 'JetBrains Mono', monospace; fill: #64748B; }
+      .mono-green { font: 700 12.5px 'JetBrains Mono', monospace; fill: #10B981; }
+      .mono-cyan { font: 700 12.5px 'JetBrains Mono', monospace; fill: #38BDF8; }
+      .mono-purple { font: 700 12.5px 'JetBrains Mono', monospace; fill: #C084FC; }
+      .badge-text { font: 700 11px 'JetBrains Mono', monospace; fill: #E2E8F0; letter-spacing: 1px; }
+
+      @keyframes floatOrb {
+        0%, 100% { transform: translate(0px, 0px) scale(1); }
+        50% { transform: translate(25px, -15px) scale(1.12); }
+      }
+      @keyframes floatOrbReverse {
+        0%, 100% { transform: translate(0px, 0px) scale(1); }
+        50% { transform: translate(-25px, 18px) scale(1.1); }
+      }
+      @keyframes pulseRing {
+        0% { r: 26px; opacity: 0.8; }
+        100% { r: 58px; opacity: 0; }
+      }
+      @keyframes rotateHex {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes dashFlow {
+        to { stroke-dashoffset: -120; }
+      }
+      @keyframes blinkCursor {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+
+      .orb-1 { animation: floatOrb 7s ease-in-out infinite; }
+      .orb-2 { animation: floatOrbReverse 8s ease-in-out infinite; }
+      .hex-spin { transform-origin: 830px 155px; animation: rotateHex 22s linear infinite; }
+      .hex-spin-rev { transform-origin: 830px 155px; animation: rotateHex 15s linear infinite reverse; }
+      .data-stream { stroke-dasharray: 8 6; animation: dashFlow 3.5s linear infinite; }
+      .cursor { animation: blinkCursor 1s infinite; }
+    </style>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="1000" height="310" rx="20" fill="url(#bgGrad)" stroke="#1E293B" stroke-width="2" />
+  <rect width="1000" height="310" rx="20" fill="url(#cyberGrid)" opacity="0.55" />
+
+  <!-- Ambient Animated Glow Orbs -->
+  <circle class="orb-1" cx="220" cy="90" r="180" fill="url(#orbGlow1)" />
+  <circle class="orb-2" cx="820" cy="170" r="190" fill="url(#orbGlow2)" />
+
+  <!-- Top Border Neon Accent Line -->
+  <rect x="40" y="1" width="920" height="2.5" fill="url(#cyanViolet)" />
+
+  <!-- Left Terminal / Architecture HUD Window -->
+  <g transform="translate(32, 26)">
+    <rect width="625" height="258" rx="14" fill="#070B14" fill-opacity="0.88" stroke="#1E293B" stroke-width="1.5" />
+    
+    <!-- Window Controls -->
+    <circle cx="22" cy="20" r="5.5" fill="#EF4444" />
+    <circle cx="40" cy="20" r="5.5" fill="#F59E0B" />
+    <circle cx="58" cy="20" r="5.5" fill="#10B981" />
+    <text x="82" y="24" class="mono-dim">alberto@sersan-webgpu-node:~/architecture/telemetry.ts</text>
+    <line x1="0" y1="38" x2="625" y2="38" stroke="#1E293B" stroke-width="1" />
+
+    <!-- Terminal Lines -->
+    <text x="22" y="66" class="subtitle">⚡ SYSTEM PROFILE // FULL-STACK · AI · WEBGPU · MOTION</text>
+
+    <text x="22" y="96" class="mono">
+      <tspan class="mono-green">➜</tspan> <tspan class="mono-cyan">role.current</tspan>   = <tspan fill="#F8FAFC">"Software &amp; AI Engineer · Creative Lead @ SerSan"</tspan>;
+    </text>
+    <text x="22" y="120" class="mono">
+      <tspan class="mono-green">➜</tspan> <tspan class="mono-cyan">academic.now</tspan>   = <tspan fill="#F8FAFC">"M.Sc. Artificial Intelligence Systems @ UniTrento"</tspan>;
+    </text>
+    <text x="22" y="144" class="mono">
+      <tspan class="mono-green">➜</tspan> <tspan class="mono-cyan">bsc.thesis</tspan>     = <tspan fill="#C084FC">"Agentic AI Orchestration &amp; OS-Level Zero-Trust"</tspan>;
+    </text>
+    <text x="22" y="168" class="mono">
+      <tspan class="mono-green">➜</tspan> <tspan class="mono-cyan">sphere_ai.rag</tspan>  = &#123; citations: <tspan class="mono-green">100%</tspan>, precision: <tspan class="mono-green">94%</tspan>, leaks: <tspan class="mono-cyan">0</tspan> &#125;;
+    </text>
+    <text x="22" y="192" class="mono">
+      <tspan class="mono-green">➜</tspan> <tspan class="mono-cyan">webgpu.engine</tspan>  = &#123; fluidParticles: <tspan class="mono-purple">120_000</tspan>, scenes3D: <tspan class="mono-purple">17</tspan>, a11y: <tspan class="mono-green">100</tspan> &#125;;
+    </text>
+    <text x="22" y="216" class="mono">
+      <tspan class="mono-green">➜</tspan> <tspan class="mono-cyan">security.db</tspan>    = &#123; rls: <tspan fill="#F8FAFC">"Postgres 17 Default-Deny"</tspan>, auditsFixed: <tspan class="mono-green">33</tspan> &#125;;
+    </text>
+
+    <text x="22" y="242" class="mono">
+      <tspan class="mono-green">alberto@GitAlboBis:~$</tspan> npx deploy-next-gen-experience --gpu=webgpu --ai=rag-verified
+    </text>
+    <rect class="cursor" x="590" y="230" width="8" height="15" fill="#38BDF8" />
+  </g>
+
+  <!-- Animated Data Conduit connecting Terminal to 3D WebGPU Core -->
+  <path class="data-stream" d="M 657 155 L 735 155" stroke="url(#cyanViolet)" stroke-width="2.5" fill="none" />
+
+  <!-- Right 3D WebGPU / AI Hexagonal Reactor Core -->
+  <g>
+    <!-- Outer HUD Frame -->
+    <rect x="685" y="26" width="283" height="258" rx="14" fill="#070B14" fill-opacity="0.82" stroke="#1E293B" stroke-width="1.5" />
+    <text x="826" y="52" text-anchor="middle" class="badge-text" fill="#38BDF8">WEBGPU // AI CORE</text>
+
+    <!-- Pulsing Radar Waves -->
+    <circle cx="830" cy="155" r="26" fill="none" stroke="#06B6D4" stroke-width="1.5">
+      <animate attributeName="r" values="26;76" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.75;0" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="830" cy="155" r="26" fill="none" stroke="#8B5CF6" stroke-width="1.5">
+      <animate attributeName="r" values="26;76" dur="3s" begin="1.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.75;0" dur="3s" begin="1.5s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Rotating Outer Hexagon (SerSan / WebGPU Motif) -->
+    <g class="hex-spin">
+      <polygon points="830,85 890,120 890,190 830,225 770,190 770,120" fill="none" stroke="url(#cyanViolet)" stroke-width="2" stroke-dasharray="18 8" />
+      <circle cx="830" cy="85" r="4" fill="#38BDF8" />
+      <circle cx="890" cy="190" r="4" fill="#8B5CF6" />
+      <circle cx="770" cy="190" r="4" fill="#10B981" />
+    </g>
+
+    <!-- Counter-Rotating Inner Hexagon -->
+    <g class="hex-spin-rev">
+      <polygon points="830,105 873,130 873,180 830,205 787,180 787,130" fill="rgba(6, 182, 212, 0.08)" stroke="url(#emeraldCyan)" stroke-width="1.8" />
+    </g>
+
+    <!-- Center Monogram 'A' (Living Letter 'A' Portfolio Tribute) -->
+    <circle cx="830" cy="155" r="26" fill="#0F172A" stroke="#38BDF8" stroke-width="2" />
+    <text x="830" y="165" text-anchor="middle" class="title" fill="#FFFFFF">A</text>
+
+    <!-- Bottom Telemetry Readout -->
+    <text x="826" y="254" text-anchor="middle" class="mono-green">● 60 FPS WGSL SHADERS</text>
+    <text x="826" y="272" text-anchor="middle" class="mono-dim">ZERO-TRUST RAG ACTIVE</text>
+  </g>
+</svg>
