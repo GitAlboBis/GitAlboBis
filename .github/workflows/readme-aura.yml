@@ -59,6 +59,7 @@ jobs:
         run: |
           node scripts/generate-live-cards.mjs dist
           cp profile-3d-contrib/*.svg dist/ 2>/dev/null || true
+          node scripts/patch-3d-contrib.mjs dist
           ls -la dist
 
       - name: Push live assets to output branch
