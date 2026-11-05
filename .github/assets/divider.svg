@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 28" width="1200" height="28" role="presentation">
+<defs>
+  <linearGradient id="base" x1="0" x2="1"><stop offset="0" stop-color="#94a3b8" stop-opacity="0"/><stop offset="0.5" stop-color="#94a3b8" stop-opacity="0.35"/><stop offset="1" stop-color="#94a3b8" stop-opacity="0"/></linearGradient>
+  <linearGradient id="pulse" x1="0" x2="1"><stop offset="0" stop-color="#22d3ee" stop-opacity="0"/><stop offset="0.6" stop-color="#22d3ee"/><stop offset="0.85" stop-color="#a855f7"/><stop offset="1" stop-color="#a855f7" stop-opacity="0"/></linearGradient>
+  <style>
+    .p { animation: run 5.5s cubic-bezier(0.65, 0, 0.35, 1) infinite; }
+    @keyframes run { from { transform: translateX(-260px); } to { transform: translateX(1240px); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+</defs>
+<rect x="0" y="14" width="1200" height="1" fill="url(#base)"/>
+<g class="p"><rect x="0" y="13.5" width="220" height="2" rx="1" fill="url(#pulse)"/><circle cx="200" cy="14.5" r="2.4" fill="#e0f2fe"/></g>
+<rect x="595" y="9" width="10" height="10" transform="rotate(45 600 14)" fill="#05070f" stroke="#38bdf8" stroke-width="1.2"><animate attributeName="stroke" values="#38bdf8;#a855f7;#38bdf8" dur="4s" repeatCount="indefinite"/></rect>
+</svg>

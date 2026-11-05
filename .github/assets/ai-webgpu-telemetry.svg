@@ -1,90 +1,102 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 230" width="100%" height="100%">
-  <defs>
-    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#090D16" />
-      <stop offset="100%" stop-color="#111827" />
-    </linearGradient>
-    <linearGradient id="barCyan" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#06B6D4" />
-      <stop offset="100%" stop-color="#10B981" />
-    </linearGradient>
-    <linearGradient id="barPurple" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#6366F1" />
-      <stop offset="100%" stop-color="#EC4899" />
-    </linearGradient>
-    <linearGradient id="barAmber" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#3B82F6" />
-      <stop offset="100%" stop-color="#38BDF8" />
-    </linearGradient>
-
-    <style>
-      .card-label { font: 700 11px 'JetBrains Mono', monospace; fill: #94A3B8; letter-spacing: 1.2px; }
-      .metric-big { font: 800 34px 'Segoe UI', Inter, system-ui, sans-serif; }
-      .metric-sub { font: 600 12.5px 'Segoe UI', Inter, system-ui, sans-serif; fill: #CBD5E1; }
-      .metric-detail { font: 500 11px 'JetBrains Mono', monospace; fill: #64748B; }
-
-      @keyframes fillBar100 {
-        0% { width: 0px; }
-        100% { width: 196px; }
-      }
-      @keyframes fillBar94 {
-        0% { width: 0px; }
-        100% { width: 184px; }
-      }
-      .bar-anim-100 { animation: fillBar100 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
-      .bar-anim-94 { animation: fillBar94 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
-    </style>
-  </defs>
-
-  <!-- CARD 1: SPHERE AI RAG CITATION ACCURACY -->
-  <g transform="translate(10, 12)">
-    <rect width="232" height="205" rx="16" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1.5" />
-    <rect x="18" y="18" width="42" height="6" rx="3" fill="#10B981" />
-    <text x="18" y="46" class="card-label">SPHERE AI // RAG MENTOR</text>
-    <text x="18" y="92" class="metric-big" fill="#10B981">100%</text>
-    <text x="18" y="118" class="metric-sub">Citation Correctness</text>
-    <text x="18" y="140" class="metric-detail">94% Precision · 90% Recall</text>
-    <text x="18" y="158" class="metric-detail">0 Leaks on 161 Bilingual Evals</text>
-    <rect x="18" y="174" width="196" height="8" rx="4" fill="#1E293B" />
-    <rect class="bar-anim-100" x="18" y="174" width="196" height="8" rx="4" fill="url(#barCyan)" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 272" width="1200" height="272" role="img" aria-label="Production impact metrics">
+<defs>
+  <linearGradient id="cardBg" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0" stop-color="#0a0e1b"/><stop offset="1" stop-color="#05070f"/></linearGradient>
+  <linearGradient id="sheen" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.5" stop-color="#fff" stop-opacity="0.06"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <style>
+    .lbl { font: 600 10.5px 'JetBrains Mono','Geist Mono','SF Mono','Cascadia Code',Consolas,'Liberation Mono',monospace; fill: #94a3b8; letter-spacing: 1.6px; }
+    .big { font: 700 46px 'Geist','SF Pro Display','Segoe UI Variable Display','Segoe UI',Inter,system-ui,-apple-system,sans-serif; letter-spacing: -1.5px; }
+    .sub { font: 600 14px 'Geist','SF Pro Display','Segoe UI Variable Display','Segoe UI',Inter,system-ui,-apple-system,sans-serif; fill: #e2e8f0; }
+    .det { font: 400 11.5px 'JetBrains Mono','Geist Mono','SF Mono','Cascadia Code',Consolas,'Liberation Mono',monospace; fill: #64748b; }
+    .card { animation: rise 1s cubic-bezier(0.16, 1, 0.3, 1) both; }
+    .c1 { animation-delay: .1s } .c2 { animation-delay: .2s } .c3 { animation-delay: .3s }
+    @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+    .bar { transform-box: fill-box; transform-origin: left center; animation: grow 1.6s cubic-bezier(0.16, 1, 0.3, 1) both; }
+    .b0 { animation-delay: .5s } .b1 { animation-delay: .6s } .b2 { animation-delay: .7s } .b3 { animation-delay: .8s }
+    @keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    .sheen { animation: sheen 7s cubic-bezier(0.16, 1, 0.3, 1) infinite; }
+    .s1 { animation-delay: .6s } .s2 { animation-delay: 1.2s } .s3 { animation-delay: 1.8s }
+    @keyframes sheen { 0%, 55% { transform: translateX(0); } 100% { transform: translateX(480px); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+</defs>
+  <g class="card c0">
+    <clipPath id="clip0"><rect x="0" y="5" width="288" height="262" rx="20"/></clipPath>
+    <linearGradient id="g0" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#34d399"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+    <radialGradient id="glow0" cx="1" cy="0" r="1"><stop offset="0" stop-color="#34d399" stop-opacity="0.22"/><stop offset="1" stop-color="#34d399" stop-opacity="0"/></radialGradient>
+    <g clip-path="url(#clip0)">
+      <rect x="0" y="5" width="288" height="262" fill="url(#cardBg)"/>
+      <rect x="0" y="5" width="288" height="262" fill="url(#glow0)"/>
+      <polygon class="sheen s0" points="-150,267 -60,267 -10,5 -100,5" fill="url(#sheen)"/>
+    </g>
+    <rect x="0.5" y="5.5" width="287" height="261" rx="19.5" fill="none" stroke="rgba(255,255,255,0.09)"/>
+    <rect x="24" y="5" width="240" height="1" fill="url(#g0)" opacity="0.8"/>
+    <rect x="24" y="31" width="28" height="5" rx="2.5" fill="url(#g0)"/>
+    <text x="24" y="61" class="lbl">SPHERE AI // RAG MENTOR</text>
+    <text x="22" y="121" class="big" fill="url(#g0)">100%</text>
+    <text x="24" y="151" class="sub">Citation correctness</text>
+    <text x="24" y="181" class="det">94% precision · 90% recall</text>
+    <text x="24" y="201" class="det">0 leaks · 161 bilingual evals</text>
+    <rect x="24" y="227" width="240" height="6" rx="3" fill="rgba(255,255,255,0.07)"/>
+    <rect class="bar b0" x="24" y="227" width="240" height="6" rx="3" fill="url(#g0)"/>
   </g>
-
-  <!-- CARD 2: WEBGPU & COMPUTE SHADERS -->
-  <g transform="translate(259, 12)">
-    <rect width="232" height="205" rx="16" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1.5" />
-    <rect x="18" y="18" width="42" height="6" rx="3" fill="#38BDF8" />
-    <text x="18" y="46" class="card-label">WEBGPU // WGSL SHADERS</text>
-    <text x="18" y="92" class="metric-big" fill="#38BDF8">120,000</text>
-    <text x="18" y="118" class="metric-sub">Real-Time GPU Fluid Particles</text>
-    <text x="18" y="140" class="metric-detail">+48k Wordmark &amp; 80k Morph</text>
-    <text x="18" y="158" class="metric-detail">17 Scroll-Locked 3D Scenes</text>
-    <rect x="18" y="174" width="196" height="8" rx="4" fill="#1E293B" />
-    <rect class="bar-anim-100" x="18" y="174" width="196" height="8" rx="4" fill="url(#barAmber)" />
+  <g class="card c1">
+    <clipPath id="clip1"><rect x="304" y="5" width="288" height="262" rx="20"/></clipPath>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#818cf8"/></linearGradient>
+    <radialGradient id="glow1" cx="1" cy="0" r="1"><stop offset="0" stop-color="#38bdf8" stop-opacity="0.22"/><stop offset="1" stop-color="#38bdf8" stop-opacity="0"/></radialGradient>
+    <g clip-path="url(#clip1)">
+      <rect x="304" y="5" width="288" height="262" fill="url(#cardBg)"/>
+      <rect x="304" y="5" width="288" height="262" fill="url(#glow1)"/>
+      <polygon class="sheen s1" points="154,267 244,267 294,5 204,5" fill="url(#sheen)"/>
+    </g>
+    <rect x="304.5" y="5.5" width="287" height="261" rx="19.5" fill="none" stroke="rgba(255,255,255,0.09)"/>
+    <rect x="328" y="5" width="240" height="1" fill="url(#g1)" opacity="0.8"/>
+    <rect x="328" y="31" width="28" height="5" rx="2.5" fill="url(#g1)"/>
+    <text x="328" y="61" class="lbl">WEBGPU // WGSL SHADERS</text>
+    <text x="326" y="121" class="big" fill="url(#g1)">120,000</text>
+    <text x="328" y="151" class="sub">Real-time GPU fluid particles</text>
+    <text x="328" y="181" class="det">+48k wordmark · 80k morph</text>
+    <text x="328" y="201" class="det">17 scroll-locked 3D scenes</text>
+    <rect x="328" y="227" width="240" height="6" rx="3" fill="rgba(255,255,255,0.07)"/>
+    <rect class="bar b1" x="328" y="227" width="240" height="6" rx="3" fill="url(#g1)"/>
   </g>
-
-  <!-- CARD 3: CORE WEB VITALS & MOBILE PERF -->
-  <g transform="translate(508, 12)">
-    <rect width="232" height="205" rx="16" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1.5" />
-    <rect x="18" y="18" width="42" height="6" rx="3" fill="#A855F7" />
-    <text x="18" y="46" class="card-label">LIGHTHOUSE // PERF &amp; A11Y</text>
-    <text x="18" y="92" class="metric-big" fill="#C084FC">100 / 100</text>
-    <text x="18" y="118" class="metric-sub">Accessibility &amp; SEO Score</text>
-    <text x="18" y="140" class="metric-detail">Mobile LCP: 4.75s → 1.74s</text>
-    <text x="18" y="158" class="metric-detail">Device-Tiered Mobile Shaders</text>
-    <rect x="18" y="174" width="196" height="8" rx="4" fill="#1E293B" />
-    <rect class="bar-anim-100" x="18" y="174" width="196" height="8" rx="4" fill="url(#barPurple)" />
+  <g class="card c2">
+    <clipPath id="clip2"><rect x="608" y="5" width="288" height="262" rx="20"/></clipPath>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#c084fc"/><stop offset="1" stop-color="#f472b6"/></linearGradient>
+    <radialGradient id="glow2" cx="1" cy="0" r="1"><stop offset="0" stop-color="#c084fc" stop-opacity="0.22"/><stop offset="1" stop-color="#c084fc" stop-opacity="0"/></radialGradient>
+    <g clip-path="url(#clip2)">
+      <rect x="608" y="5" width="288" height="262" fill="url(#cardBg)"/>
+      <rect x="608" y="5" width="288" height="262" fill="url(#glow2)"/>
+      <polygon class="sheen s2" points="458,267 548,267 598,5 508,5" fill="url(#sheen)"/>
+    </g>
+    <rect x="608.5" y="5.5" width="287" height="261" rx="19.5" fill="none" stroke="rgba(255,255,255,0.09)"/>
+    <rect x="632" y="5" width="240" height="1" fill="url(#g2)" opacity="0.8"/>
+    <rect x="632" y="31" width="28" height="5" rx="2.5" fill="url(#g2)"/>
+    <text x="632" y="61" class="lbl">LIGHTHOUSE // PERF &amp; A11Y</text>
+    <text x="630" y="121" class="big" fill="url(#g2)">100/100</text>
+    <text x="632" y="151" class="sub">Accessibility &amp; SEO</text>
+    <text x="632" y="181" class="det">Mobile LCP 4.75s → 1.74s</text>
+    <text x="632" y="201" class="det">Device-tiered mobile shaders</text>
+    <rect x="632" y="227" width="240" height="6" rx="3" fill="rgba(255,255,255,0.07)"/>
+    <rect class="bar b2" x="632" y="227" width="240" height="6" rx="3" fill="url(#g2)"/>
   </g>
-
-  <!-- CARD 4: SECURITY HARDENING & RELEASES -->
-  <g transform="translate(757, 12)">
-    <rect width="232" height="205" rx="16" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1.5" />
-    <rect x="18" y="18" width="42" height="6" rx="3" fill="#F43F5E" />
-    <text x="18" y="46" class="card-label">SECURITY // DEVSECOPS</text>
-    <text x="18" y="92" class="metric-big" fill="#FB7185">Zero-Trust</text>
-    <text x="18" y="118" class="metric-sub">33 Audit Findings Remediated</text>
-    <text x="18" y="140" class="metric-detail">9-Role Postgres 17 RLS + pgTAP</text>
-    <text x="18" y="158" class="metric-detail">21/49 Production Releases Led</text>
-    <rect x="18" y="174" width="196" height="8" rx="4" fill="#1E293B" />
-    <rect class="bar-anim-94" x="18" y="174" width="184" height="8" rx="4" fill="url(#barPurple)" />
+  <g class="card c3">
+    <clipPath id="clip3"><rect x="912" y="5" width="288" height="262" rx="20"/></clipPath>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fb7185"/><stop offset="1" stop-color="#f59e0b"/></linearGradient>
+    <radialGradient id="glow3" cx="1" cy="0" r="1"><stop offset="0" stop-color="#fb7185" stop-opacity="0.22"/><stop offset="1" stop-color="#fb7185" stop-opacity="0"/></radialGradient>
+    <g clip-path="url(#clip3)">
+      <rect x="912" y="5" width="288" height="262" fill="url(#cardBg)"/>
+      <rect x="912" y="5" width="288" height="262" fill="url(#glow3)"/>
+      <polygon class="sheen s3" points="762,267 852,267 902,5 812,5" fill="url(#sheen)"/>
+    </g>
+    <rect x="912.5" y="5.5" width="287" height="261" rx="19.5" fill="none" stroke="rgba(255,255,255,0.09)"/>
+    <rect x="936" y="5" width="240" height="1" fill="url(#g3)" opacity="0.8"/>
+    <rect x="936" y="31" width="28" height="5" rx="2.5" fill="url(#g3)"/>
+    <text x="936" y="61" class="lbl">SECURITY // DEVSECOPS</text>
+    <text x="934" y="121" class="big" fill="url(#g3)">33/33</text>
+    <text x="936" y="151" class="sub">Audit findings remediated</text>
+    <text x="936" y="181" class="det">9-role Postgres 17 RLS + pgTAP</text>
+    <text x="936" y="201" class="det">21 / 49 production releases led</text>
+    <rect x="936" y="227" width="240" height="6" rx="3" fill="rgba(255,255,255,0.07)"/>
+    <rect class="bar b3" x="936" y="227" width="225.6" height="6" rx="3" fill="url(#g3)"/>
   </g>
 </svg>

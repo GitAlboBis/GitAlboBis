@@ -1,381 +1,122 @@
 <div align="center">
 
-```aura width=900 height=320
-<div style={{
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'space-between',
-  width: '100%',
-  height: '100%',
-  padding: '36px 42px',
-  background: 'linear-gradient(135deg, #050816 0%, #0f172a 55%, #1e1b4b 100%)',
-  borderRadius: '24px',
-  border: '1px solid rgba(56, 189, 248, 0.28)',
-  color: '#f8fafc',
-  fontFamily: 'Inter',
-  position: 'relative',
-  overflow: 'hidden'
-}}>
-  <style>{`
-    @keyframes pulseGlow {
-      0%, 100% { opacity: 0.35; transform: scale(1); }
-      50% { opacity: 0.85; transform: scale(1.08); }
-    }
-    @keyframes scanline {
-      0% { transform: translateY(-100%); }
-      100% { transform: translateY(320px); }
-    }
-    @keyframes blinkDot {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.25; }
-    }
-    #aura-orb { animation: pulseGlow 4s ease-in-out infinite; }
-    #live-dot { animation: blinkDot 1.6s ease-in-out infinite; }
-  `}</style>
+<img src="./.github/assets/hero-cyber-banner.svg" width="100%" alt="Alberto Tuveri — Software & AI Engineer · Creative Lead · WebGPU / 3D & Motion" />
 
-  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
-    <div style={{
-      display: 'flex',
-      alignItems: 'center',
-      gap: '10px',
-      padding: '6px 14px',
-      borderRadius: '999px',
-      background: 'rgba(6, 182, 212, 0.12)',
-      border: '1px solid rgba(6, 182, 212, 0.4)',
-      fontSize: '12px',
-      letterSpacing: '1.5px',
-      color: '#38bdf8',
-      fontWeight: 700
-    }}>
-      <svg width="10" height="10" viewBox="0 0 10 10">
-        <circle id="live-dot" cx="5" cy="5" r="4" fill="#10b981" />
-      </svg>
-      SYSTEM ONLINE // SERSAN AI STUDIO · UNITRENTO M.SC. AI
-    </div>
-    <div style={{ fontSize: '13px', color: '#94a3b8', fontWeight: 600 }}>
-      github.com/GitAlboBis · v2026.11
-    </div>
-  </div>
+<a href="https://github.com/GitAlboBis"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=17&duration=2600&pause=1400&color=67E8F9&center=true&vCenter=true&width=760&height=34&lines=Software+%26+AI+Engineer+%C2%B7+Creative+Lead+%40+SerSan+(London);Production+RAG+%C2%B7+LLM+guardrails+%C2%B7+agentic+AI+security;WebGPU+%2F+WGSL+compute+shaders+%C2%B7+Three.js+%C2%B7+3D+%26+motion;M.Sc.+Artificial+Intelligence+Systems+%40+University+of+Trento" alt="Typing roles" /></a>
 
-  <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', marginTop: '8px' }}>
-    <div style={{
-      fontSize: '46px',
-      fontWeight: 800,
-      letterSpacing: '-1px',
-      background: 'linear-gradient(90deg, #ffffff 0%, #38bdf8 55%, #a855f7 100%)',
-      backgroundClip: 'text',
-      color: '#ffffff'
-    }}>
-      Alberto Tuveri
-    </div>
-    <div style={{ fontSize: '19px', color: '#cbd5e1', fontWeight: 500 }}>
-      Software & AI Engineer · Creative Lead · Full-Stack · WebGPU / 3D & Motion
-    </div>
-    <div style={{ fontSize: '14px', color: '#94a3b8', maxWidth: '780px', lineHeight: 1.5 }}>
-      Architecting deterministic RAG pipelines & Zero-Trust agentic guardrails, database-first security models, and real-time 120k-particle WebGPU compute shaders.
-    </div>
-  </div>
-
-  <div style={{ display: 'flex', gap: '14px', marginTop: '14px' }}>
-    <div style={{
-      display: 'flex',
-      flexDirection: 'column',
-      padding: '10px 16px',
-      borderRadius: '12px',
-      background: 'rgba(15, 23, 42, 0.78)',
-      border: '1px solid rgba(99, 102, 241, 0.35)'
-    }}>
-      <span style={{ fontSize: '11px', color: '#94a3b8', textTransform: 'uppercase' }}>Sphere AI RAG Citations</span>
-      <span style={{ fontSize: '20px', fontWeight: 800, color: '#38bdf8' }}>100% Validated</span>
-    </div>
-    <div style={{
-      display: 'flex',
-      flexDirection: 'column',
-      padding: '10px 16px',
-      borderRadius: '12px',
-      background: 'rgba(15, 23, 42, 0.78)',
-      border: '1px solid rgba(16, 185, 129, 0.35)'
-    }}>
-      <span style={{ fontSize: '11px', color: '#94a3b8', textTransform: 'uppercase' }}>WebGPU Compute Fluid</span>
-      <span style={{ fontSize: '20px', fontWeight: 800, color: '#10b981' }}>120,000 Particles</span>
-    </div>
-    <div style={{
-      display: 'flex',
-      flexDirection: 'column',
-      padding: '10px 16px',
-      borderRadius: '12px',
-      background: 'rgba(15, 23, 42, 0.78)',
-      border: '1px solid rgba(168, 85, 247, 0.35)'
-    }}>
-      <span style={{ fontSize: '11px', color: '#94a3b8', textTransform: 'uppercase' }}>sersan.io 3D Canvas</span>
-      <span style={{ fontSize: '20px', fontWeight: 800, color: '#c084fc' }}>17 Scroll Scenes</span>
-    </div>
-    <div style={{
-      display: 'flex',
-      flexDirection: 'column',
-      padding: '10px 16px',
-      borderRadius: '12px',
-      background: 'rgba(15, 23, 42, 0.78)',
-      border: '1px solid rgba(244, 63, 94, 0.35)'
-    }}>
-      <span style={{ fontSize: '11px', color: '#94a3b8', textTransform: 'uppercase' }}>Security Hardening</span>
-      <span style={{ fontSize: '20px', fontWeight: 800, color: '#fb7185' }}>33 Audits Closed</span>
-    </div>
-  </div>
-</div>
+```aura inline align=center link="https://linkedin.com/in/albertotuveri" width=196 height=44
+<SocialMediaButton
+  icon="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI2ZmZmZmZiI+PHBhdGggZD0iTTIwLjQ1IDIwLjQ1aC0zLjU2di01LjU3YzAtMS4zMy0uMDItMy4wNC0xLjg1LTMuMDQtMS44NSAwLTIuMTQgMS40NS0yLjE0IDIuOTR2NS42N0g5LjM1VjloMy40MXYxLjU2aC4wNWMuNDgtLjkgMS42NC0xLjg1IDMuMzctMS44NSAzLjYgMCA0LjI3IDIuMzcgNC4yNyA1LjQ2djYuMjh6TTUuMzQgNy40M2EyLjA2IDIuMDYgMCAxIDEgMC00LjEzIDIuMDYgMi4wNiAwIDAgMSAwIDQuMTN6TTcuMTIgMjAuNDVIMy41NlY5aDMuNTZ2MTEuNDV6TTIyLjIyIDBIMS43N0MuNzkgMCAwIC43NyAwIDEuNzN2MjAuNTRDMCAyMy4yMy43OSAyNCAxLjc3IDI0aDIwLjQ1Yy45OCAwIDEuNzgtLjc3IDEuNzgtMS43M1YxLjczQzI0IC43NyAyMy4yIDAgMjIuMjIgMHoiLz48L3N2Zz4="
+  text="in/albertotuveri"
+  backgroundColor="#070a14"
+  textColor="#f1f5f9"
+  borderColor="#1e293b"
+  fontSize={14}
+  width={196}
+  height={44}
+  iconSize={18}
+  gradientStrokeWidth={1.6}
+  gradientStops={[
+    { offset: '0%', color: '#38bdf8' },
+    { offset: '20%', color: '#0b1020' },
+    { offset: '50%', color: '#0a66c2' },
+    { offset: '62%', color: '#ffffff' },
+    { offset: '80%', color: '#0b1020' },
+    { offset: '100%', color: '#38bdf8' },
+  ]}
+/>
 ```
 
-<br/>
-
-```aura inline align=center link="https://linkedin.com/in/albertotuveri" width=210 height=46
-<div style={{
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  width: '100%',
-  height: '100%',
-  borderRadius: '12px',
-  background: 'linear-gradient(90deg, #0a66c2, #1d4ed8)',
-  color: '#ffffff',
-  fontWeight: 700,
-  fontSize: '14px',
-  letterSpacing: '0.5px'
-}}>
-  in / albertotuveri
-</div>
+```aura inline align=center link="mailto:albertotuveri@gmail.com" width=246 height=44
+<SocialMediaButton
+  icon="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjdlOGY5IiBzdHJva2Utd2lkdGg9IjEuOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cmVjdCB4PSIyLjUiIHk9IjQuNSIgd2lkdGg9IjE5IiBoZWlnaHQ9IjE1IiByeD0iMi41Ii8+PHBhdGggZD0ibTMgNi41IDkgNi41IDktNi41Ii8+PC9zdmc+"
+  text="albertotuveri@gmail.com"
+  backgroundColor="#070a14"
+  textColor="#f1f5f9"
+  borderColor="#1e293b"
+  fontSize={14}
+  width={246}
+  height={44}
+  iconSize={18}
+  gradientStrokeWidth={1.6}
+  gradientStops={[
+    { offset: '0%', color: '#22d3ee' },
+    { offset: '20%', color: '#0b1020' },
+    { offset: '50%', color: '#67e8f9' },
+    { offset: '62%', color: '#ffffff' },
+    { offset: '80%', color: '#0b1020' },
+    { offset: '100%', color: '#22d3ee' },
+  ]}
+/>
 ```
 
-```aura inline align=center link="mailto:albertotuveri@gmail.com" width=240 height=46
-<div style={{
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  width: '100%',
-  height: '100%',
-  borderRadius: '12px',
-  background: 'linear-gradient(90deg, #0f172a, #1e293b)',
-  border: '1px solid rgba(56, 189, 248, 0.45)',
-  color: '#38bdf8',
-  fontWeight: 700,
-  fontSize: '14px'
-}}>
-  albertotuveri@gmail.com
-</div>
+```aura inline align=center link="https://sersan.io" width=150 height=44
+<SocialMediaButton
+  icon="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYzRiNWZkIiBzdHJva2Utd2lkdGg9IjEuOCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTEyIDIuNSAyMC4yIDcuMjV2OS41TDEyIDIxLjUgMy44IDE2Ljc1di05LjV6Ii8+PHBhdGggZD0iTTguNiAxNS42IDEyIDcuNmwzLjQgOE05LjkgMTIuOGg0LjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjwvc3ZnPg=="
+  text="sersan.io"
+  backgroundColor="#070a14"
+  textColor="#f1f5f9"
+  borderColor="#1e293b"
+  fontSize={14}
+  width={150}
+  height={44}
+  iconSize={18}
+  gradientStrokeWidth={1.6}
+  gradientStops={[
+    { offset: '0%', color: '#a855f7' },
+    { offset: '20%', color: '#0b1020' },
+    { offset: '50%', color: '#c4b5fd' },
+    { offset: '62%', color: '#ffffff' },
+    { offset: '80%', color: '#0b1020' },
+    { offset: '100%', color: '#a855f7' },
+  ]}
+/>
 ```
 
-```aura inline align=center link="https://sersan.io" width=180 height=46
-<div style={{
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  width: '100%',
-  height: '100%',
-  borderRadius: '12px',
-  background: 'linear-gradient(90deg, #4f46e5, #7c3aed)',
-  color: '#ffffff',
-  fontWeight: 700,
-  fontSize: '14px'
-}}>
-  sersan.io 3D ↗
-</div>
+```aura inline align=center link="https://spherenode.com" width=186 height=44
+<SocialMediaButton
+  icon="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNmVlN2I3IiBzdHJva2Utd2lkdGg9IjEuOCI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iOSIvPjxlbGxpcHNlIGN4PSIxMiIgY3k9IjEyIiByeD0iOSIgcnk9IjMuNiIvPjxwYXRoIGQ9Ik0xMiAzYTEzIDEzIDAgMCAxIDAgMThNMTIgM2ExMyAxMyAwIDAgMCAwIDE4Ii8+PC9zdmc+"
+  text="spherenode.com"
+  backgroundColor="#070a14"
+  textColor="#f1f5f9"
+  borderColor="#1e293b"
+  fontSize={14}
+  width={186}
+  height={44}
+  iconSize={18}
+  gradientStrokeWidth={1.6}
+  gradientStops={[
+    { offset: '0%', color: '#10b981' },
+    { offset: '20%', color: '#0b1020' },
+    { offset: '50%', color: '#6ee7b7' },
+    { offset: '62%', color: '#ffffff' },
+    { offset: '80%', color: '#0b1020' },
+    { offset: '100%', color: '#10b981' },
+  ]}
+/>
 ```
 
-```aura inline align=center link="https://spherenode.com" width=200 height=46
-<div style={{
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  width: '100%',
-  height: '100%',
-  borderRadius: '12px',
-  background: 'linear-gradient(90deg, #059669, #0d9488)',
-  color: '#ffffff',
-  fontWeight: 700,
-  fontSize: '14px'
-}}>
-  spherenode.com ↗
-</div>
-```
-
-<br/>
-
-```aura width=900 height=340
-<div style={{
-  display: 'flex',
-  gap: '20px',
-  width: '100%',
-  height: '100%',
-  padding: '24px',
-  background: '#090d16',
-  borderRadius: '20px',
-  border: '1px solid rgba(148, 163, 184, 0.18)',
-  color: '#f8fafc',
-  fontFamily: 'Inter'
-}}>
-  <div style={{
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'space-between',
-    width: '48%',
-    padding: '20px',
-    borderRadius: '16px',
-    background: 'rgba(15, 23, 42, 0.9)',
-    border: '1px solid rgba(56, 189, 248, 0.25)'
-  }}>
-    <div style={{ fontSize: '13px', color: '#38bdf8', fontWeight: 700, letterSpacing: '1px' }}>
-      AI & RAG ENGINEERING BENCHMARKS // SPHERE AI
-    </div>
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '13px' }}>
-        <span style={{ color: '#cbd5e1' }}>Citation Correctness (0 Hallucinations)</span>
-        <span style={{ color: '#10b981', fontWeight: 700 }}>100%</span>
-      </div>
-      <div style={{ width: '100%', height: '8px', background: '#1e293b', borderRadius: '4px', display: 'flex' }}>
-        <div style={{ width: '100%', height: '8px', background: 'linear-gradient(90deg, #06b6d4, #10b981)', borderRadius: '4px' }} />
-      </div>
-
-      <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '13px' }}>
-        <span style={{ color: '#cbd5e1' }}>Clarification Precision (75% to 94%)</span>
-        <span style={{ color: '#38bdf8', fontWeight: 700 }}>94%</span>
-      </div>
-      <div style={{ width: '100%', height: '8px', background: '#1e293b', borderRadius: '4px', display: 'flex' }}>
-        <div style={{ width: '94%', height: '8px', background: 'linear-gradient(90deg, #3b82f6, #38bdf8)', borderRadius: '4px' }} />
-      </div>
-
-      <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '13px' }}>
-        <span style={{ color: '#cbd5e1' }}>Clarification Recall (32% to 90%)</span>
-        <span style={{ color: '#a855f7', fontWeight: 700 }}>90%</span>
-      </div>
-      <div style={{ width: '100%', height: '8px', background: '#1e293b', borderRadius: '4px', display: 'flex' }}>
-        <div style={{ width: '90%', height: '8px', background: 'linear-gradient(90deg, #6366f1, #a855f7)', borderRadius: '4px' }} />
-      </div>
-    </div>
-    <div style={{ fontSize: '11px', color: '#64748b' }}>
-      Evaluated on 161-question bilingual (IT/EN) test suite · pgvector + LLM relevance grader
-    </div>
-  </div>
-
-  <div style={{
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'space-between',
-    width: '52%',
-    padding: '20px',
-    borderRadius: '16px',
-    background: 'rgba(15, 23, 42, 0.9)',
-    border: '1px solid rgba(168, 85, 247, 0.25)'
-  }}>
-    <div style={{ fontSize: '13px', color: '#c084fc', fontWeight: 700, letterSpacing: '1px' }}>
-      ARCHITECTURAL PILLARS & RESEARCH
-    </div>
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '13px', color: '#e2e8f0' }}>
-      <div style={{ display: 'flex', gap: '10px' }}><div style={{ width: '8px', height: '8px', marginTop: '5px', borderRadius: '2px', background: '#38bdf8', flexShrink: 0 }} /><span style={{ display: 'flex', flexDirection: 'column' }}><span style={{ fontWeight: 700 }}>WebGPU & Shaders:</span><span style={{ color: '#94a3b8' }}>48k particle wordmark, 80k depth-lit morph, raymarched black hole.</span></span></div>
-      <div style={{ display: 'flex', gap: '10px' }}><div style={{ width: '8px', height: '8px', marginTop: '5px', borderRadius: '2px', background: '#10b981', flexShrink: 0 }} /><span style={{ display: 'flex', flexDirection: 'column' }}><span style={{ fontWeight: 700 }}>Database-First Security:</span><span style={{ color: '#94a3b8' }}>9-role Postgres 17 RLS + pgTAP testing & 6-phase state machines.</span></span></div>
-      <div style={{ display: 'flex', gap: '10px' }}><div style={{ width: '8px', height: '8px', marginTop: '5px', borderRadius: '2px', background: '#a855f7', flexShrink: 0 }} /><span style={{ display: 'flex', flexDirection: 'column' }}><span style={{ fontWeight: 700 }}>Geospatial & Mobile Perf:</span><span style={{ color: '#94a3b8' }}>PostGIS 3 sub-second search · LCP 4.75s to 1.74s (-63%).</span></span></div>
-      <div style={{ display: 'flex', gap: '10px' }}><div style={{ width: '8px', height: '8px', marginTop: '5px', borderRadius: '2px', background: '#fb7185', flexShrink: 0 }} /><span style={{ display: 'flex', flexDirection: 'column' }}><span style={{ fontWeight: 700 }}>Agentic AI Security Thesis:</span><span style={{ color: '#94a3b8' }}>MCP, MITRE ATLAS, OWASP Agentic Top 10 & Zero-Trust.</span></span></div>
-    </div>
-    <div style={{ fontSize: '11px', color: '#64748b' }}>
-      B.Sc. Computer Science @ UniCam (2026) · M.Sc. Artificial Intelligence Systems @ UniTrento
-    </div>
-  </div>
-</div>
-```
+<img src="https://komarev.com/ghpvc/?username=GitAlboBis&label=PROFILE%20VIEWS&color=0e7490&style=flat-square&labelColor=0b1020" alt="Profile views" />
 
 </div>
 
-<br/>
+<p align="center"><img src="./.github/assets/divider.svg" width="100%" alt="" /></p>
 
-<div align="center">
-
-<!-- ═══════════════════════════════════════════════════════════════════════════
-     HERO ANIMATED BANNER (CAPSULE RENDER + CUSTOM SVG HUD)
-     ═══════════════════════════════════════════════════════════════════════════ -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=venom&color=0:050816,35:0f172a,70:4f46e5,100:06b6d4&height=220&section=header&text=ALBERTO%20TUVERI&fontSize=54&fontColor=ffffff&animation=twinkling&fontAlignY=42&desc=Software%20%26%20AI%20Engineer%20%E2%9A%A1%20Creative%20Lead%20%E2%9A%A1%20WebGPU%20%2F%203D%20%26%20Motion&descAlignY=68&descSize=18" />
-  <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=venom&color=0:0f172a,40:312e81,75:4f46e5,100:0891b2&height=220&section=header&text=ALBERTO%20TUVERI&fontSize=54&fontColor=ffffff&animation=twinkling&fontAlignY=42&desc=Software%20%26%20AI%20Engineer%20%E2%9A%A1%20Creative%20Lead%20%E2%9A%A1%20WebGPU%20%2F%203D%20%26%20Motion&descAlignY=68&descSize=18" />
-  <img width="100%" alt="Alberto Tuveri Header" src="https://capsule-render.vercel.app/api?type=venom&color=0:050816,35:0f172a,70:4f46e5,100:06b6d4&height=220&section=header&text=ALBERTO%20TUVERI&fontSize=54&fontColor=ffffff&animation=twinkling&fontAlignY=42&desc=Software%20%26%20AI%20Engineer%20%E2%9A%A1%20Creative%20Lead%20%E2%9A%A1%20WebGPU%20%2F%203D%20%26%20Motion&descAlignY=68&descSize=18" />
-</picture>
-
-<!-- ═══════════════════════════════════════════════════════════════════════════
-     DYNAMIC MULTI-LINE TYPING TERMINAL
-     ═══════════════════════════════════════════════════════════════════════════ -->
-<a href="https://github.com/GitAlboBis">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=21&duration=2800&pause=900&color=38BDF8&center=true&vCenter=true&multiline=true&repeat=true&width=900&height=85&lines=%3E+Software+%26+AI+Engineer+%C2%B7+Creative+Lead+%40+SerSan+(London);%3E+Full-Stack+Architect+%7C+WebGPU+%2F+WGSL+Compute+Shaders+%26+3D+Motion;%3E+Production+RAG+Systems+%C2%B7+LLM+Guardrails+%C2%B7+Agentic+AI+Security;%3E+M.Sc.+in+Artificial+Intelligence+Systems+%40+University+of+Trento" alt="Typing SVG" />
-</a>
-
-<br/>
-
-<!-- ═══════════════════════════════════════════════════════════════════════════
-     LIVE STATUS & SOCIAL PILLS
-     ═══════════════════════════════════════════════════════════════════════════ -->
-<p align="center">
-  <a href="https://sersan.io" target="_blank">
-    <img src="https://img.shields.io/badge/ROLE-Software_%26_AI_Engineer_·_Creative_Lead_@SerSan-4F46E5?style=for-the-badge&logo=sparkles&logoColor=white&labelColor=0B0F19" alt="SerSan Role" />
-  </a>
-  <a href="https://www.unitn.it/" target="_blank">
-    <img src="https://img.shields.io/badge/M.Sc.-AI_Systems_@UniTrento-06B6D4?style=for-the-badge&logo=academia&logoColor=white&labelColor=0B0F19" alt="UniTrento" />
-  </a>
-  <a href="https://www.unicam.it/" target="_blank">
-    <img src="https://img.shields.io/badge/B.Sc.-Computer_Science_@UniCam-10B981?style=for-the-badge&logo=graduation-cap&logoColor=white&labelColor=0B0F19" alt="UniCam" />
-  </a>
-</p>
+## ⚡ `whoami`
 
 <p align="center">
-  <a href="https://linkedin.com/in/albertotuveri" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-Alberto_Tuveri-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="mailto:albertotuveri@gmail.com">
-    <img src="https://img.shields.io/badge/Email-albertotuveri%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
-  </a>
-  <a href="https://sersan.io" target="_blank">
-    <img src="https://img.shields.io/badge/Studio-sersan.io-8B5CF6?style=for-the-badge&logo=webgl&logoColor=white" alt="sersan.io" />
-  </a>
-  <a href="https://spherenode.com" target="_blank">
-    <img src="https://img.shields.io/badge/Live_SaaS-spherenode.com-EC4899?style=for-the-badge&logo=openai&logoColor=white" alt="SphereNode" />
-  </a>
-  <img src="https://komarev.com/ghpvc/?username=GitAlboBis&label=PROFILE+VIEWS&color=06b6d4&style=for-the-badge" alt="Profile Views" />
+  <img src="https://raw.githubusercontent.com/GitAlboBis/GitAlboBis/output/neofetch-card.svg" width="100%" alt="alberto@gitalbobis — neofetch card with live GitHub stats" />
 </p>
 
-<!-- ═══════════════════════════════════════════════════════════════════════════
-     CUSTOM ANIMATED SVG HERO HUD (LOCAL ASSET)
-     ═══════════════════════════════════════════════════════════════════════════ -->
-<img src="./.github/assets/hero-cyber-banner.svg" width="100%" alt="Alberto Tuveri Cyber WebGPU & AI Banner" />
+<sub>↻ Card rigenerata ogni giorno da GitHub Actions con dati live dall'API GraphQL (repos, stars, contributions, commits).</sub>
 
-</div>
+<p align="center"><img src="./.github/assets/divider.svg" width="100%" alt="" /></p>
 
----
+## 📊 Production Impact
 
-## ⚡ `whoami` // Engineering Where Silicon Meets Cinema
-
-```yaml
-identity:
-  name: "Alberto Tuveri (AlboOnTop)"
-  handle: "@GitAlboBis"
-  location: "Trento / Marche / Sardinia, Italy 🇮🇹 · Working Globally (London Remote 🇬🇧)"
-  current_roles:
-    - "Software & AI Engineer · Creative Lead @ SerSan (Sersan Limited, London)"
-    - "Full-Stack Architect (Freelance) @ ALS MCL Civitanova"
-    - "M.Sc. Candidate in Artificial Intelligence Systems @ University of Trento"
-  education:
-    msc: "M.Sc. in Artificial Intelligence Systems — University of Trento (2026–Present)"
-    bsc: "B.Sc. in Computer Science — University of Camerino (2022–2026)"
-    thesis: "From Autocomplete to Agentic Orchestration: Architectural Analysis & Security of OS-Level Agents"
-
-core_superpowers:
-  ai_engineering:    ["Production Bilingual RAG", "pgvector", "LLM Evals & Relevance Graders", "Zero-Trust Agentic Guardrails", "MCP"]
-  gpu_and_motion:    ["WebGPU", "WGSL / TSL Compute Shaders", "Three.js / R3F", "GLSL Raymarching", "GSAP + Lenis", "4K VFX & Brand Film"]
-  fullstack_and_db:  ["Next.js 16 / React 19", "TypeScript Strict", "Supabase / Postgres 17", "PostGIS 3", "RLS & pgTAP Security", "Java Spring Boot"]
-```
-
----
-
-## 📊 Production Impact & Telemetry Bento
-
-<div align="center">
-  <img src="./.github/assets/ai-webgpu-telemetry.svg" width="100%" alt="Production Impact & Telemetry Bento" />
-</div>
-
-<br/>
+<p align="center">
+  <img src="./.github/assets/ai-webgpu-telemetry.svg" width="100%" alt="Production impact metrics: 100% RAG citation correctness, 120k WebGPU particles, Lighthouse 100, 33 audit findings remediated" />
+</p>
 
 <table width="100%">
   <tr>
@@ -418,11 +159,11 @@ core_superpowers:
   </tr>
 </table>
 
----
+<p align="center"><img src="./.github/assets/divider.svg" width="100%" alt="" /></p>
 
-## 🗂️ Interactive Career & Architecture Dossiers
+## 🗂️ Career & Architecture Dossiers
 
-*(Clicca sulle sezioni qui sotto per espandere i dettagli tecnici dei sistemi in produzione e della ricerca accademica)*
+<sub>Click a dossier to expand the technical details of production systems and academic research.</sub>
 
 <details open>
 <summary><b>🏢 [WORK EXPERIENCE] SerSan — AI Studio (London, Remote) · Software & AI Engineer · Creative Lead</b></summary>
@@ -464,9 +205,9 @@ core_superpowers:
   - Analyzed OS-level attack surfaces (**Indirect Prompt Injection, Tool Poisoning, Multi-Agent System Kill Chains**) against **MITRE ATLAS** and **OWASP Agentic Top 10**, proposing **Zero-Trust defense architectures** for enterprise pipelines.
 </details>
 
----
+<p align="center"><img src="./.github/assets/divider.svg" width="100%" alt="" /></p>
 
-## 🛠️ Full-Stack, AI, WebGPU & Creative Arsenal
+## 🛠️ Arsenal
 
 <div align="center">
 
@@ -505,81 +246,39 @@ core_superpowers:
 
 </div>
 
----
+<p align="center"><img src="./.github/assets/divider.svg" width="100%" alt="" /></p>
 
-## 🚀 Featured Open-Source & Engineering Repositories
-
-<div align="center">
-
-| Repository | Architecture & Domain | Key Highlights |
-| :--- | :--- | :--- |
-| 🎙️ **[TeamsAppointmentAgentWebApp](https://github.com/GitAlboBis/TeamsAppointmentAgentWebApp)** | `TypeScript` · `Angular` · `Azure Speech` · `Copilot Studio` · `Dynamics 365` | Voice-powered AI agent & serverless web app bridging Pro-Code UX with Low-Code automation for hands-free meeting orchestration. |
-| 🎮 **[Nancymon](https://github.com/GitAlboBis/Nancymon)** | `TypeScript` · `2D Canvas Engine` · `State Machine` · `Web Audio` | Custom Pokémon-style top-down RPG engine built from scratch as an interactive web application with custom tilemaps & dialogue systems. |
-| 🧊 **[Nancy3D](https://github.com/GitAlboBis/Nancy3D)** | `Three.js` · `WebGL` · `3D Shaders` · `Interactive Motion` | Personalized real-time 3D interactive web environment featuring spatial lighting, custom camera choreography, and particle effects. |
-| 🌾 **[IDS_GROUP_PROJECT](https://github.com/daveeCity/IDS_GROUP_PROJECT)** | `Java` · `Spring Boot` · `Spring Security` · `PostgreSQL` · `JWT` · `UML` | Multi-actor Agricultural Supply Chain Platform (10 RBAC roles) engineered with Unified Process, GRASP principles, and GoF Design Patterns. |
-| 💡 **[LED-DRAW](https://github.com/GitAlboBis/LED-DRAW)** | `C++` · `Arduino` · `Wokwi Simulator` · `Hardware Architecture` | Low-level embedded LED matrix drawing engine developed for the Computer Architecture course at the University of Camerino. |
-
-</div>
-
----
-
-## 📈 GitHub Telemetry, Trophies & Activity Matrix
+## 📈 GitHub Telemetry
 
 <div align="center">
 
-<!-- GITHUB PROFILE TROPHIES -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-trophy.vercel.app/?username=GitAlboBis&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&row=1&column=7" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github-profile-trophy.vercel.app/?username=GitAlboBis&theme=flat&no-frame=true&no-bg=true&margin-w=8&row=1&column=7" />
-  <img width="100%" src="https://github-profile-trophy.vercel.app/?username=GitAlboBis&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&row=1&column=7" alt="GitHub Trophies" />
-</picture>
+<img src="https://raw.githubusercontent.com/GitAlboBis/GitAlboBis/output/profile-3d-aurora.svg" width="100%" alt="3D contribution calendar with language and activity breakdown" />
 
-<br/><br/>
+<br/>
 
-<!-- STREAK STATS & TOP LANGUAGES -->
-<a href="https://github.com/GitAlboBis">
-  <img height="175" src="https://streak-stats.demolab.com?user=GitAlboBis&theme=tokyonight&hide_border=true&background=0B0F19&ring=06B6D4&fire=4F46E5&currStreakLabel=38BDF8" alt="GitHub Streak" />
-</a>
-<a href="https://github.com/GitAlboBis">
-  <img height="175" src="https://github-readme-stats.vercel.app/api/top-langs/?username=GitAlboBis&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0B0F19&title_color=38BDF8&text_color=E2E8F0" alt="Top Languages" />
-</a>
+<a href="https://github.com/GitAlboBis"><img src="https://streak-stats.demolab.com?user=GitAlboBis&hide_border=true&border_radius=18&background=05070F&stroke=1E293B&ring=22D3EE&fire=A855F7&currStreakNum=F8FAFC&sideNums=F8FAFC&currStreakLabel=67E8F9&sideLabels=94A3B8&dates=64748B" width="100%" alt="GitHub streak" /></a>
 
-<br/><br/>
+<br/>
 
-<!-- REAL-TIME ACTIVITY GRAPH -->
-<a href="https://github.com/GitAlboBis">
-  <img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=GitAlboBis&bg_color=0B0F19&color=38BDF8&line=6366F1&point=06B6D4&area=true&hide_border=true&custom_title=Alberto%20Tuveri's%20Contribution%20Pulse" alt="Contribution Activity Graph" />
-</a>
-
-<br/><br/>
-
-<!-- CONTRIBUTION SNAKE ANIMATION -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/GitAlboBis/GitAlboBis/output/github-contribution-grid-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/GitAlboBis/GitAlboBis/output/github-contribution-grid-snake.svg" />
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" width="100%" />
+  <img alt="Contribution snake" src="https://raw.githubusercontent.com/GitAlboBis/GitAlboBis/output/github-contribution-grid-snake-dark.svg" width="100%" />
 </picture>
 
 </div>
 
----
+<p align="center"><img src="./.github/assets/divider.svg" width="100%" alt="" /></p>
 
 <div align="center">
 
-### 🤝 Let's Build the Extraordinary
+### 🤝 Let's build the extraordinary
 
-Whether it's **architecting zero-leak RAG & agentic systems**, **writing real-time WebGPU compute shaders**, or **directing cinematic 3D web experiences**:
+Zero-leak RAG & agentic systems · real-time WebGPU compute shaders · cinematic 3D web experiences.
 
-<p align="center">
-  <a href="mailto:albertotuveri@gmail.com">
-    <img src="https://img.shields.io/badge/Initiate_Transmission-albertotuveri%40gmail.com-06B6D4?style=for-the-badge&logo=minutemailer&logoColor=white&labelColor=0B0F19" alt="Email Alberto" />
-  </a>
-  <a href="https://linkedin.com/in/albertotuveri" target="_blank">
-    <img src="https://img.shields.io/badge/Connect_on_LinkedIn-Alberto_Tuveri-4F46E5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0B0F19" alt="LinkedIn" />
-  </a>
-</p>
+<a href="mailto:albertotuveri@gmail.com"><img src="https://img.shields.io/badge/Initiate_transmission-albertotuveri%40gmail.com-22D3EE?style=for-the-badge&logo=minutemailer&logoColor=white&labelColor=05070F" alt="Email Alberto" /></a>
+<a href="https://linkedin.com/in/albertotuveri"><img src="https://img.shields.io/badge/Connect-LinkedIn-6366F1?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=05070F" alt="LinkedIn" /></a>
 
-<!-- ANIMATED WAVE FOOTER -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:050816,50:4f46e5,100:06b6d4&height=110&section=footer" alt="Footer Wave" />
+<img src="./.github/assets/footer.svg" width="100%" alt="Engineering where silicon meets cinema" />
 
 </div>
