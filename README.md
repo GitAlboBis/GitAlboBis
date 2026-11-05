@@ -73,55 +73,6 @@
 
 <p align="center"><img src="./.github/assets/divider.svg" width="100%" alt="" /></p>
 
-## 🗂️ Career & Architecture Dossiers
-
-<sub>Click a dossier to expand the technical details of production systems and academic research.</sub>
-
-<details open>
-<summary><b>🏢 [WORK EXPERIENCE] SerSan — AI Studio (London, Remote) · Software & AI Engineer · Creative Lead</b></summary>
-<br/>
-
-> **May 2026 – Present** | Owning the front-end, WebGPU/3D and motion layer across everything the studio ships, architecting the AI layer of its flagship trading SaaS, and directing brand identity & 4K film production.
-
-* **SphereNode (`spherenode.com`) — Vertical SaaS Platform:**
-  * Replaced **8 separate SaaS tools** (*Circle, Teachable, Zoom, Intercom, HubSpot, Mailchimp, Stripe, Notion*) for the Italian retail-trading market using **React 18, Vite, Supabase (Postgres, RLS, Realtime, pgvector, Edge Functions), Whop, Cloudflare Stream, Capacitor**.
-  * Architected **Sphere AI** (bilingual IT/EN RAG mentor) with semantic chunking, tier-aware retrieval, curated fast-path canonical answers, LLM relevance grader, and strict guardrails against false premises or live-market hallucination.
-  * Built the **Trading Journal Analytics Engine** (broker fill trade reconstruction, gross/net classification, pip & live-FX sizing, multi-account cash-flow ledger) and exposed it as a consent-gated, privacy-first RAG data source.
-  * Engineered the **Cloudflare Stream live-session video pipeline** (RTMP ingest + corporate firewall fallback) and served as **Release Manager for 21 of 49 production releases**.
-* **`sersan.io` Studio Website — Sole Engineer & Designer:**
-  * Built with **Next.js 16, React 19, Three.js (WebGPU/TSL), React Three Fiber, GSAP + Lenis, Tailwind v4**.
-  * Authored custom WGSL/TSL compute shaders, refractive crystal materials, selective-bloom post-processing, and a custom mobile GPU device-tiering engine.
-* **Brand Identity & 4K Brand Film — Creative Lead:**
-  * Designed the SerSan hexagonal mark, custom display typeface, and color system; directed, animated, and sound-designed a **64-second 4K brand film** across 14 narrative scenes with 3D VFX and kinetic typography.
-
-</details>
-
-<details>
-<summary><b>🛰️ [WORK EXPERIENCE] ALS MCL Civitanova & DOIT S.r.l · Full-Stack & Voice AI Engineering</b></summary>
-<br/>
-
-* **ALS MCL Civitanova — Full-Stack Developer (`Badante 24h` Production PWA | Jan 2026 – Present):**
-  * Architected an end-to-end production PWA (**Next.js 15 App Router, React 19, TypeScript strict, Supabase**) with offline support (**Serwist**), **VAPID Web Push**, real-time WebSocket chat (**Supabase Realtime**), and **PostGIS 3** sub-second geospatial search.
-  * Hardened security with RLS, Next.js RBAC middleware, HSTS, strict CSP, and a **3-layer Sentry observability tunnel** (client/server/edge) bypassing ad-blockers.
-* **DOIT S.r.l — AI & Software Developer (`TeamsAppointmentAgentWebApp` | Nov 2025 – Feb 2026):**
-  * Designed and shipped a **voice-powered AI agent for Microsoft Teams** enabling hands-free appointment management from natural-language audio notes via **Azure Speech Services, Copilot Studio, Power Automate, and Dynamics 365**, paired with a Pro-Code **Angular + TypeScript** front-end.
-
-</details>
-
-<details>
-<summary><b>🎓 [ACADEMIC RESEARCH] Agentic AI Security, MITRE ATLAS & University of Trento / Camerino</b></summary>
-<br/>
-
-* **M.Sc. in Artificial Intelligence Systems — University of Trento** *(Sep 2026 – Present)*
-* **B.Sc. in Computer Science — University of Camerino** *(Jan 2022 – Apr 2026)*
-  * 📜 **Thesis:** *"From Autocomplete to Agentic Orchestration: Architectural Analysis and Security of OS-Level Agents"*
-  * Mapped the architectural evolution from deterministic code completion to autonomous multi-agent systems (**MCP, RAG, Agentic Orchestration**).
-  * Analyzed OS-level attack surfaces (**Indirect Prompt Injection, Tool Poisoning, Multi-Agent System Kill Chains**) against **MITRE ATLAS** and **OWASP Agentic Top 10**, proposing **Zero-Trust defense architectures** for enterprise pipelines.
-
-</details>
-
-<p align="center"><img src="./.github/assets/divider.svg" width="100%" alt="" /></p>
-
 ## 🛠️ Arsenal
 
 <div align="center">
